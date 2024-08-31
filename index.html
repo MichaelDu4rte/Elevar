@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     >
   </head>
   <body>
@@ -19,12 +21,12 @@
 
       <ul class="navbar">
         <li><a href="#home">Home</a></li>
-        <li><a href="#home">Teste</a></li>
-        <li><a href="#home">Teste</a></li>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#vantagens">Vantagens</a></li>
       </ul>
 
       <div class="header-btn">
-        <a href="#" class="btn-contact">Contato</a>
+        <a href="#" class="btn-contact" id="btn-home">Contato</a>
       </div>
     </header>
 
@@ -40,25 +42,72 @@
       </div>
 
       <div class="form-container">
-        <form action="">
+        <form action="" id="whatsapp-form">
           <div class="input-box">
             <span>Nome</span>
-            <input type="text" placeholder="Digite o seu nome" />
+            <input type="text" id="name" placeholder="Digite o seu nome" />
           </div>
 
           <div class="input-box">
             <span>Mensagem</span>
-            <input type="text" placeholder="Escreva uma mensagem" />
+            <input
+              type="text"
+              id="message"
+              placeholder="Escreva uma mensagem"
+            />
           </div>
+
+          <div id="name-error" class="error"></div>
+          <div id="message-error" class="error"></div>
+
           <input type="submit" class="btn" value="Enviar mensagem" />
         </form>
       </div>
     </section>
 
-    <section class="ride" id="ride">
+    <section class="about" id="sobre">
       <div class="heading">
-        <span>Works</span>
-        <h1>Works Works</h1>
+        <span>Eficiência e segurança a um custo acessível </span>
+        <h1>Automatize sua Garagem com Inteligência</h1>
+      </div>
+
+      <div class="about-container">
+        <div class="about-img">
+          <img src="assets/images/about1.png" alt="" />
+        </div>
+
+        <div class="about-text">
+          <span>Segurança e Economia em Um Só Sistema </span>
+          <p>
+            Transforme a gestão da sua garagem com um sistema inovador que
+            combina automação e inteligência para oferecer
+            <b> controle total sobre a entrada e saída de veículos</b>. Nossa
+            solução permite que você monitore todos os movimentos de forma
+            precisa e em tempo real >, garantindo uma operação mais segura e
+            organizada. Com funcionalidades avançadas, como
+            <b>auditoria automática</b>, você terá uma visão clara e detalhada
+            de todas as atividades, facilitando a tomada de decisões e a
+            prevenção de fraudes.
+          </p>
+          <p>
+            Além disso, nossa tecnologia foi desenvolvida para ser uma
+            <b>opção de baixo investimento</b>, acessível a qualquer tamanho de
+            empresa. A implementação rápida e fácil significa que você começará
+            a ver os benefícios imediatamente, sem complicações ou grandes
+            gastos. Invista em um sistema que otimiza sua operação, reduz custos
+            e proporciona a tranquilidade de saber que sua garagem está sob
+            controle, de maneira autônoma e eficiente.
+          </p>
+
+          <a href="#" class="btn-contact">Entrar em Contato</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ride" id="vantagens">
+      <div class="heading">
+        <span>Tecnologia e Inovação no Controle de Veículos </span>
+        <h1>Recursos Avançados para Gestão Eficiente</h1>
       </div>
 
       <div class="ride-container">
@@ -90,5 +139,35 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="footer-content">
+        <h3>Elevar</h3>
+
+        <ul class="socials">
+          <li>
+            <a href="https://wa.me/5567998780937?" target="_blank"
+              ><i class="bx bxl-whatsapp"></i>67 9 9878-0937</a
+            >
+          </li>
+          <li>
+            <a href="https://elevartech.com.br" target="_blank"
+              ><i class="bx bxl-internet-explorer"></i>elevartech.com.br</a
+            >
+          </li>
+          <li>
+            <a href="mail:contato@elevartech.com.br" target="_blank"
+              ><i class="bx bx-envelope"></i>contato@elevartech.com.br</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2024 Elevar</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/form.js"></script>
   </body>
 </html>
